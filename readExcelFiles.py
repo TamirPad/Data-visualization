@@ -55,6 +55,6 @@ def get_monthly_df():
         f = os.path.join(directory, filename)
         # checking if it is a file
         if os.path.isfile(f):
-            monthly_df[f'{filename}'] = pd.read_json(excel_to_json('excel_shifts\\' + filename))
+            monthly_df[f'{filename}'] = pd.read_json(excel_to_json('excel_shifts/' + filename))
 
     return monthly_df
